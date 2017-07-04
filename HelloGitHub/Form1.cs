@@ -16,5 +16,10 @@ namespace HelloGitHub
         {
             InitializeComponent();
         }
+
+        private void btClick_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello!!\rHave a nice day!!");
+        }
     }
 }

@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btClick = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btClick
+            // 
+            this.btClick.Location = new System.Drawing.Point(12, 12);
+            this.btClick.Name = "btClick";
+            this.btClick.Size = new System.Drawing.Size(75, 23);
+            this.btClick.TabIndex = 0;
+            this.btClick.Text = "Click";
+            this.btClick.UseVisualStyleBackColor = true;
+            this.btClick.Click += new System.EventHandler(this.btClick_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btClick);
             this.Name = "Form1";
             this.Text = "MainForm";
             this.ResumeLayout(false);
@@ -42,6 +54,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btClick;
     }
 }
 
